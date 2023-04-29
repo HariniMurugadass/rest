@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <script>
+            function load()
+            {
+                alert("The finest chicken in town!")
+            }
+            function ok()
+            {
+                document.getElementById("yes").innerHTML="Thank You For Your Feedback."
+                document.getElementById("right").style.backgroundColor="purple"
+                document.getElementById("wrong").style.backgroundColor="white"
+            }
+            function no()
+            {
+                document.getElementById("yes").innerHTML="Sorry You Didn't Like It."
+                document.getElementById("wrong").style.backgroundColor="green"
+                document.getElementById("right").style.backgroundColor="white"
+            }
+        </script>
+        <style>
+            li
+            {
+                display: inline;
+                padding: 30px;
+            }
+            nav
+            {
+                background-color: crimson;
+               
+                font-size: 25px;
+                padding-bottom: 2px;
+                margin-top: -25px;
+                margin-bottom: -25px;
+            }
+            img
+            {
+                height: 300px; width: 400px;
+            }
+            .ar
+            {
+                background-color: gray;
+                width: 400px;
+                height: 1750px;
+                float: left;
+                margin-top: 20px;
+            }
+            .sc
+            {
+                background-color: darkgray;
+                height: 1750px;
+                width: 100%;
+            }
+            .items
+            {
+                height: 500px;
+                width: 500px;
+                border-radius: 10px;
+                box-shadow: 5px 5px 3px rgb(75, 72, 72);
+                float: left;
+                margin-right: 10px;
+                margin-left: 30px;
+                margin-bottom: 50px;
+                background-color: aquamarine;
+            }
+            .pizza
+            {
+                height: 500px;
+                width: 500px;
+                border-radius: 10px;
+                box-shadow: 5px 5px 3px rgb(75, 72, 72);
+                float: left;
+                margin-right: 10px;
+                margin-left: 30px;
+                margin-bottom: 50px;
+                background-color: aquamarine;
+            }
+            .fried
+            {
+                height: 300px;
+                width: 500px;
+                background-image: url(https://www.rockrecipes.com/wp-content/uploads/2014/01/Oven-Baked-Wings-with-Honey-Molasses-Barbecue-Sauce-close-up-photo-on-white-plate-480x360.jpg);
+                background-size: cover;
+            }
+            .fried:hover
+            {
+                background-image: url(https://recipes.net/wp-content/uploads/2021/05/peanut-oil-fried-chicken-wings.jpg);
+                background-size: cover;
+            }
+            .buffalo
+            {
+                height: 300px;
+                width: 500px;
+                background-image: url(https://valentinascorner.com/wp-content/uploads/2020/02/Baked-Chicken-Wings-2-500x500.jpg);
+                background-size: cover;
+            }
+            .buffalo:hover
+            {
+                background-image: url(https://easychickenrecipes.com/wp-content/uploads/2022/09/Boneless-Buffalo-Chicken-Wings-10.jpg);
+                background-size: cover;
+            }
+            .drum
+            {
+                height: 300px;
+                width: 500px;
+                background-image: url(https://www.recipetineats.com/wp-content/uploads/2022/07/Crispy-Baked-Chicken-Drumsticks_5-SQ.jpg?w=500&h=500&crop=1);
+                background-size: cover;
+            }
+            .drum:hover
+            {
+                background-image: url(https://irepo.primecp.com/2015/06/223899/Barbecued-Drumsticks_ExtraLarge700_ID-1036395.jpg?v=1036395);
+                background-size: cover;
+            }
+            .nuggets
+            {
+                height: 300px;
+                width: 500px;
+                background-image: url(https://joyfoodsunshine.com/wp-content/uploads/2021/08/healthy-homemade-chicken-nuggets-recipe-7.jpg);
+                background-size: cover;
+            }
+            .nuggets:hover
+            {
+                background-image: url(https://thrivinghomeblog.com/wp-content/uploads/2023/01/homemade-chicken-nuggets-15.jpg);
+                background-size: cover;
+            }
+            .curry
+            {
+                height: 300px;
+                width: 500px;
+                background-image: url(https://www.licious.in/blog/wp-content/uploads/2020/12/Chicken-Curry-recipe.jpg);
+                background-size: cover;
+            }
+            .curry:hover
+            {
+                background-image: url(https://recipesfromapantry.com/wp-content/uploads/2018/05/instant-pot-chicken-curry-11.jpg);
+                background-size: 100% 125%;
+            }
+            .tikka
+            {
+                height: 300px;
+                width: 500px;
+                background-image: url(https://cdn.shopify.com/s/files/1/0148/1945/9126/articles/Chicken_Tikka_Masala_1200x1200.jpg?v=1606845941);
+                background-size: cover;
+            }
+            .tikka:hover
+            {
+                background-image: url(https://littleferrarokitchen.com/wp-content/uploads/2023/02/creamy-chicken-tikka-masala-recipe.jpg);
+                background-size: cover;
+            }
+            .letter:first-letter
+            {
+                color: blue;
+                font-size: 50px;
+                text-shadow: 5px 5px 2px black;
+            }
+            .dropdown-content
+            {
+                display: none;
+                position: absolute;
+                min-width: 100px;
+                background-color: lightgreen;
+                z-index: 1;
+            }
+            .dropdown
+            {
+                display: inline-block;
+            }
+            .dropdown:hover .dropdown-content
+            {
+                display: block;
+            }
+        </style>
+    </head>
+    <body onload="load()">
+        <header style="background-color: palegreen; height: 220px;width: 100%;">
+            <img src="https://www.shutterstock.com/image-vector/roast-chicken-restaurant-logo-260nw-1221952585.jpg" style="height: 220px; width: 220px; float: left;">
+            <h1 style="text-align: center; padding-top: 75px;" class="letter">
+                    BEST CHICKEN
+            </h1>
+        </header>
+        <nav>
+            <ul>
+                <div class="dropdown">
+                <li>Menu</li>
+                <div class="dropdown-content">
+                    <a href="noodles.html"><p>Noodles</p></a>
+                    <a href="pizza_order.html"><p>Pizza</p></a>
+                    <a href="chiken-curry_order.html"><p>Chicken</p></a>
+                </div>
+                </div>
+
+                <div class="dropdown">
+                <li>About</li>
+                <div class="dropdown-content">
+                    <p>help</p>
+                    <p>service</p>
+                    <p>reviews</p>
+                </div>  
+                </div>
+
+                <div class="dropdown">
+                <li>Contact</li>
+                <div class="dropdown-content">
+                    <p>manager</p>
+                    <p>CEO</p>
+                    <p>founder</p>
+                    <p>staff and security</p> 
+                </div> 
+                </div>
+
+                <div class="dropdown">
+                <li>Career</li>
+                <div class="dropdown-content">
+                    <p>chef</p>
+                    <p>custodian</p>
+                    <p>cashier</p>
+                    <p>waiter</p>
+                </div>
+                </div>
+            </ul>
+        </nav>
+        <article class="ar">
+            <iframe style="margin-top:30px;" width="400px" height="500px" src="https://www.youtube.com/embed/h9VVxC0beFk?autoplay=1&mute=1" title="YouTube video player" autoplay frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div>
+                <img src="https://st4.depositphotos.com/1388860/28381/v/1600/depositphotos_283814744-stock-illustration-25-percent-off-neon-lettering.jpg" height="200px" width="100px">
+            </div>
+            <div>
+                <h1>
+                    ON ALL DRINKS!!!!
+                </h1>
+                <img src="https://www.shutterstock.com/image-photo/double-cool-ice-soft-drink-260nw-647315608.jpg" >
+            </div>
+            <p id="yes" style="text-align: center;">
+                How would you rate your experiance?
+            </p>
+            <button type="button" onclick="ok()" id="right">Yes it was good</button>
+            <button type="button" onclick="no()" id="wrong">No it was not good</button>
+        </article>
+        <section class="sc">
+            
+            <div style="height: 100px; width: 100%;">
+                <h1 style="text-align: center; padding: 30px;">
+                    Food Items
+                </h1>
+            </div>
+            <div class="items">
+                <h1>
+                    FRIED CHICKEN
+                </h1>
+                <div class="fried">
+                </div>
+                <p>
+                    Come on over to our store where we handle all of your food with care. our chefs skillfuly prepare your food
+                    with the finest of ingredients such as Chicken, Spices, 
+                </p>
+                <a href="Favorite Food Form.html">
+                    <button type="button">
+                        PLACE ORDER HERE
+                    </button>
+                </a>
+            </div>
+            <div class="items">
+                <h1>
+                    BUFFALO WINGS
+                </h1>
+                <div class="buffalo" >
+                </div>
+                <p>
+                    Our buffalo chicken wings are made carefully by our chefs. Made with spicy hot sauce,
+                    ground paprika, ground cayenne, pepper, and garlic powder blended and marinated to meet and surpass your expectations.
+                    Click below to place your order.
+                </p>
+                <a href="Favorite Food Form.html">
+                    <button type="button">
+                        CLICK HERE TO PLACE YOUR ORDER
+                    </button>
+                </a>
+            </div>
+            <div class="items">
+                <h1>
+                    CHICKEN DRUMSTICKS
+                </h1>
+                <div class="drum">
+                </div>
+                <p>
+                    Our chicken drumstick are hear to satisfy our customers. They are marinated perfectly and seasoned perfectly well too. Made with chili powder, smoked paprika, and crushed garlic granules. 
+                    Click below to place your order.
+                </p>
+                <a href="Favorite Food Form.html">
+                    <button type="button">
+                        CLICK HERE TO PLACE YOUR ORDER
+                    </button>
+                </a>
+            </div>
+            <div class="pizza">
+                <h1>
+                    CHICKEN NUGGETS
+                </h1>
+                <div class="nuggets">
+                </div>
+                <p>
+                    A kid favorite, .... Chicken Nuggets!!! cooked spicy or regular and made better than any other nugget you will ever taste made by our best chefs. 
+                    Click below to place your order.
+                </p>
+                <a href="Favorite Food Form.html">
+                    <button type="button">
+                        PLACE YOUR ORDER HERE
+                    </button>
+                </a>
+            </div>
+            <div class="pizza">
+                <h1>
+                    CHICKEN CURRY
+                </h1>
+                <div class="curry">
+                </div>
+                <p>
+                    Nice spicy chicken made with paprika, garlic paste, tandoori chicken and other spices.
+                    click below to order.
+                </p>
+                <a href="Favorite Food Form.html">
+                    <button type="button">
+                        PLACE ORDER HERE
+                    </button>
+                </a>
+            </div>
+            <div class="pizza">
+                <h1>
+                    CHICKEN TIKKA MASALA
+                </h1>
+                <div class="tikka">
+                </div>
+                <p>
+                    Our Chicken tikka masala is made with fresh ingredients so that you are garenteed the best food you will put in your mouth
+                    Click button below to place your order.
+                </p>
+                <a href="Favorite Food Form.html">
+                    <button type="button">
+                        Click button, and place order.
+                    </button>
+                </a>
+            </div>
+        </section>
+    </body>
+</html>

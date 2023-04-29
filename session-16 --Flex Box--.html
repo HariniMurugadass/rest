@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       
+        <style>
+            .flex-container
+            {
+                display: flex;
+                height: 600px;
+                width: 100%;
+                background-color:rgb(239, 167, 66);
+                justify-content: center;
+                align-items: center;
+            }
+            .flex-item
+            {
+                height: 400px;
+                width: 400px;
+                margin: 20px;
+            }
+            header
+            {
+                height:200px;
+                background:linear-gradient(to right,orange,red)
+            }
+            img
+            {
+                height:150px;
+                width:150px;
+                float: left;
+            }
+          
+           
+        </style>
+        <title>Aarnav's Resturaunt</title>
+        <link rel="shortcut icon" href="favorite-foods.ico" type="image/x-icon">
+    </head>
+    <body>
+        <header style="width: 100%;">
+        <marquee direction="right">
+        <img src="res.gif">
+        <h1 style="padding-top: 70px;">Aarnav's Resturaunt</h1>
+        </marquee>
+        </header>
+        <div class="flex-container">
+            <div class="flex-item" style="background-image:url(https://www.whiskaffair.com/wp-content/uploads/2021/10/Andhra-Chicken-Curry-2-3.jpg);background-size: contain;"><h1 style="color: white; text-align: center;">Chicken Curry</h1>
+            <a href="chiken-curry_order.html"><button type="button">Place Order</button></a></div>
+            <div class="flex-item" style="background-image:url(https://www.recipetineats.com/wp-content/uploads/2022/05/Picking-up-Supreme-Soy-Noodles-chopsticks.jpg);background-size: 100% 100%;"><h1 style="color: white; text-align: center;">Noodles</h1>
+            <a href="noodles.html"><button type="button">Place Order</button></a></div>
+            <div class="flex-item" style="background-image:url(https://www.kingarthurbaking.com/sites/default/files/2021-10/sourdough-pizza-crust.jpg);background-size: 100% 100%;"><h1 style="color: white; text-align: center;">Pizza</h1>
+            <a href="pizza_order.html"><button type="button">Place Order</button></a></div>
+        </div>
+    </body>
+</html>

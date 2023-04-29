@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <script>
+            function load()
+            {
+                alert("Yummy noodles in town!")
+            }
+            function ok()
+            {
+                document.getElementById("yes").innerHTML="Thank You For Your Feedback."
+                document.getElementById("right").style.backgroundColor="purple"
+                document.getElementById("wrong").style.backgroundColor="white"
+            }
+            function no()
+            {
+                document.getElementById("yes").innerHTML="Sorry You Didn't Like It."
+                document.getElementById("wrong").style.backgroundColor="green"
+                document.getElementById("right").style.backgroundColor="white"
+            }
+        </script>
+        <style>
+            li
+            {
+                display: inline;
+                padding: 30px;
+            }
+            nav
+            {
+                background-color: crimson;
+               
+                font-size: 25px;
+                padding-bottom: 2px;
+                margin-top: -25px;
+                margin-bottom: -25px;
+            }
+            img
+            {
+                height: 300px; width: 400px;
+            }
+            .ar
+            {
+                background-color: gray;
+                width: 400px;
+                height: 1750px;
+                float: left;
+                margin-top: 20px;
+            }
+            .sc
+            {
+                background-color: darkgray;
+                height: 1750px;
+                width: 100%;
+            }
+            .items
+            {
+                height: 500px;
+                width: 500px;
+                border-radius: 10px;
+                box-shadow: 5px 5px 3px rgb(75, 72, 72);
+                float: left;
+                margin-right: 10px;
+                margin-left: 30px;
+                margin-bottom: 50px;
+                background-color: aquamarine;
+            }
+            .pizza
+            {
+                height: 500px;
+                width: 500px;
+                border-radius: 10px;
+                box-shadow: 5px 5px 3px rgb(75, 72, 72);
+                float: left;
+                margin-right: 10px;
+                margin-left: 30px;
+                margin-bottom: 50px;
+                background-color: aquamarine;
+            }
+            .fried
+            {
+                height: 300px;
+                width: 500px;
+                background-image: url(https://drivemehungry.com/wp-content/uploads/2019/07/szechuan-noodles-garlic-chili-oil-2.jpg);
+                background-size: cover;
+            }
+           
+            .buffalo
+            {
+                height: 300px;
+                width: 500px;
+                background-image: url(https://i2.wp.com/vegecravings.com/wp-content/uploads/2017/03/veg-hakka-noodles-recipe-with-step-by-step-instructions.jpg?fit=1838%2C1493&quality=65&strip=all&ssl=1);
+                background-size: cover;
+            }
+            
+            .drum
+            {
+                height: 300px;
+                width: 500px;
+                background-image: url(https://images.squarespace-cdn.com/content/v1/5ac1524aaf20962396c278a4/1606029821914-RF6DCYCNQ2VY014V2H2E/C3BC565F-AF8C-458B-B87C-5C53F15AA004.jpg);
+                background-size: cover;
+            }
+            
+            .nuggets
+            {
+                height: 300px;
+                width: 500px;
+                background-image: url(https://theflavoursofkitchen.com/wp-content/uploads/2022/02/Sesame-Garlic-Ramens-1-scaled.jpg);
+                background-size: cover;
+            }
+            
+            .curry
+            {
+                height: 300px;
+                width: 500px;
+                background-image: url(https://i1.wp.com/www.deathbygluttony.com/wp-content/uploads/2021/01/drunken-noodles-1-scaled.jpg?resize=1152%2C1536&ssl=1);
+                background-size: cover;
+            }
+            
+            .tikka
+            {
+                height: 300px;
+                width: 500px;
+                background-image: url(https://theflavoursofkitchen.com/wp-content/uploads/2018/07/Veggie-and-Chicken-Ramen-2.jpg);
+                background-size: cover;
+            }
+             
+            .letter:first-letter
+            {
+                color: blue;
+                font-size: 50px;
+                text-shadow: 5px 5px 2px black;
+            }
+            .dropdown-content
+            {
+                display: none;
+                position: absolute;
+                min-width: 100px;
+                background-color: rgb(21, 19, 19);
+                color: antiquewhite;
+                z-index: 1;
+            }
+            a:visited
+            {
+                color: antiquewhite;
+            }
+            .dropdown
+            {
+                display: inline-block;
+            }
+            .dropdown:hover .dropdown-content
+            {
+                display: block;
+            }
+        </style>
+    </head>
+    <body onload="load()">
+        <header style="background-color: rgb(231, 222, 64); height: 220px;width: 100%;">
+            <img src="https://images.vexels.com/media/users/3/74444/raw/e96edabc94e86c6fb635933011ec110c-noodles-bowl-vector-logo.jpg" style="height: 220px; width: 220px; float: left;">
+            <h1 style="text-align: center; padding-top: 75px;" class="letter">
+                    Yummy Noodles
+            </h1>
+        </header>
+        <nav>
+            <ul>
+                <div class="dropdown">
+                <li>Menu</li>
+                <div class="dropdown-content">
+                    <a href="noodles.html"><p>Noodles</p></a>
+                    <a href="pizza_order.html"><p>Pizza</p></a>
+                    <a href="chiken-curry_order.html"><p>Chicken</p></a>
+                </div>
+                </div>
+
+                <div class="dropdown">
+                <li>About</li>
+                <div class="dropdown-content">
+                    <p>help</p>
+                    <p>service</p>
+                    <p>reviews</p>
+                </div>  
+                </div>
+
+                <div class="dropdown">
+                <li>Contact</li>
+                <div class="dropdown-content">
+                    <p>manager</p>
+                    <p>CEO</p>
+                    <p>founder</p>
+                    <p>staff and security</p> 
+                </div> 
+                </div>
+
+                <div class="dropdown">
+                <li>Career</li>
+                <div class="dropdown-content">
+                    <p>chef</p>
+                    <p>custodian</p>
+                    <p>cashier</p>
+                    <p>waiter</p>
+                </div>
+                </div>
+            </ul>
+        </nav>
+        <article class="ar">
+            <iframe style="margin-top:30px;" width="400px" height="500px" src="https://www.youtube.com/embed/bX6t4JcGeoc?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen ></iframe>
+    \
+            <div>
+                <img src="https://st4.depositphotos.com/1388860/28381/v/1600/depositphotos_283814744-stock-illustration-25-percent-off-neon-lettering.jpg" height="200px" width="100px">
+            </div>
+            <div>
+                <h1>
+                    ON ALL DRINKS!!!!
+                </h1>
+                <img src="https://www.shutterstock.com/image-photo/double-cool-ice-soft-drink-260nw-647315608.jpg">
+            </div>
+            <p id="yes" style="text-align: center;">
+                How would you rate your experiance?
+            </p>
+            <button type="button" onclick="ok()" id="right">Yes it was good</button>
+            <button type="button" onclick="no()" id="wrong">No it was not good</button>
+        </article>
+        <section class="sc">
+            
+            <div style="height: 100px; width: 100%;">
+                <h1 style="text-align: center; padding: 30px;">
+                    Food Items
+                </h1>
+            </div>
+            <div class="items">
+                <h1>
+                    CHICKEN NOODLES
+                </h1>
+                <div class="fried">
+                </div>
+                <p>
+                    Spicy Hakka Noodles With Fresh Veggies And Fried Crispy Chicken.
+                to place order click here. 
+                </p>
+                <a href="Favorite Food Form.html">
+                    <button type="button">
+                        PLACE ORDER HERE
+                    </button>
+                </a>
+            </div>
+            <div class="items">
+                <h1>
+                    VEG NOODLES
+                </h1>
+                <div class="buffalo" >
+                </div>
+                <p>
+                    Fried Noodles With An Big Assortment Of Veg Items Such As Bell Peppers, Broccoli, Mushroom, And Tomatoes.
+                To Place Your Order, Click Below.
+                </p>
+                <a href="Favorite Food Form.html">
+                    <button type="button">
+                        CLICK HERE TO PLACE YOUR ORDER
+                    </button>
+                </a>
+            </div>
+            <div class="items">
+                <h1>
+                    SPICY NOODLES
+                </h1>
+                <div class="drum">
+                </div>
+                <p>
+                    Spicy Szechuan Noodles with Garlic Chili oil, an assortment of spices, cilantro, and Sesame seeds.
+                To Place your order click below.
+                </p>
+                <a href="Favorite Food Form.html">
+                    <button type="button">
+                        CLICK HERE TO PLACE YOUR ORDER
+                    </button>
+                </a>
+            </div>
+            <div class="pizza">
+                <h1>
+                    Macaroni And Cheese
+                </h1>
+                <div class="nuggets">
+                </div>
+                <p>
+                    Baked, Southern Macaroni with freshly made, ultra creamy cheese.
+                    In order to buy this item click below to order.
+                </p>
+                <a href="Favorite Food Form.html">
+                    <button type="button">
+                        PLACE YOUR ORDER HERE
+                    </button>
+                </a>
+            </div>
+            <div class="pizza">
+                <h1>
+                    Drunken Noodles
+                </h1>
+                <div class="curry">
+                </div>
+                <p>
+                    A special type of noodles developed in thailand, made of Flat, long, noodles that are soaked in sauce.
+                To order, click below.
+                </p>
+                <a href="Favorite Food Form.html">
+                    <button type="button">
+                        PLACE ORDER HERE
+                    </button>
+                </a>
+            </div>
+            <div class="pizza">
+                <h1>
+                    Ramen Noodles
+                </h1>
+                <div class="tikka">
+                </div>
+                <p>
+                    Ramen is type of noodle created in Japan. It is made out of Spicy Ramen noodle which is tossed in a Sesame, Soy, and Garlic sauce.
+                Click below to order.
+                </p>
+                <a href="Favorite Food Form.html">
+                    <button type="button">
+                        Click button, and place order.
+                    </button>
+                </a>
+            </div>
+        </section>
+    </body>
+</html>

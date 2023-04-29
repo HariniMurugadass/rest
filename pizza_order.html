@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+        <script>
+            function load()
+            {
+                alert("Enjoy your pizza!!!")
+            }
+            function ok()
+            {
+                document.getElementById("yes").innerHTML="Thank You For Your Feedback."
+                document.getElementById("right").style.backgroundColor="purple"
+                document.getElementById("wrong").style.backgroundColor="white"
+            }
+            function no()
+            {
+                document.getElementById("yes").innerHTML="Sorry You Didn't Like It."
+                document.getElementById("wrong").style.backgroundColor="green"
+                document.getElementById("right").style.backgroundColor="white"
+            }
+        </script>
+        <style>
+            li
+            {
+                display: inline;
+                padding: 30px;
+            }
+            nav
+            {
+                background-color: crimson;
+                height: 50px;
+                font-size: 25px;
+                padding-bottom: 2px;
+            }
+            img
+            {
+                height: 300px; width: 400px;
+            }
+            .ar
+            {
+                background-color: rgb(67, 66, 66);
+                width: 400px;
+                height: 1750px;
+                float: left;
+                margin-top: 20px;
+            }
+            .sc
+            {
+                background-color: darkgray;
+                height: 1750px;
+                width: 100%
+            }
+            .items
+            {
+                height: 500px;
+                width: 500px;
+                border-radius:20px;
+                float: left;
+                margin-right: 10px;
+                margin-left: 30px;
+                margin-bottom: 50px;
+                background-color: aquamarine;
+                box-shadow: 5px 5px 5px rgb(19, 19, 19);
+            }
+            .pizza
+            {
+                height: 500px;
+                width: 500px;
+                border-radius:20px;
+                float: left;
+                margin-right: 10px;
+                margin-left: 30px;
+                margin-bottom: 50px;
+                background-color: aquamarine;
+                box-shadow: 5px 5px 5px rgb(19, 19, 19);
+            }
+            .cheese
+            {
+                height: 300px;
+                width: 500px;
+                background-image: url(https://kitchenatics.com/wp-content/uploads/2020/09/Cheese-pizza-1.jpg);
+                background-size: cover;
+            }
+            .cheese:hover
+            {
+                background-image: url(https://img.tastelife.tv/assets/uploads/2022/06/Found_a_new_way_to_make_Double_Cheese_Pizza_No_kneading_Incredibly_easy_Best_pizza_in_the_world_10x7-684x480.jpg);
+                background-size: cover;
+            }
+            .chicken
+            {
+                height: 300px;
+                width: 500px;
+                background-image: url(https://hips.hearstapps.com/hmg-prod/images/190226-buffalo-chicken-pizza-370-1552084943.jpg?crop=0.668xw:1.00xh;0.209xw,0.00255xh&resize=1200:*);
+                background-size: cover;
+            }
+            .chicken:hover
+            {
+                background-image: url(https://storcpdkenticomedia.blob.core.windows.net/media/recipemanagementsystem/media/recipe-media-files/recipes/retail/x17/2014_garlic-chicken-pizza_600x600.jpg?ext=.jpg);
+                background-size: cover;
+            }
+            .veg
+            {
+                height: 300px;
+                width: 500px;
+                background-image: url(https://allmyrecipe.com/wp-content/uploads/2020/10/homemade-veg-pizza.jpg);
+                background-size: cover;
+            }
+            .veg:hover
+            {
+                background-image: url(https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/216054.jpg);
+                background-size: cover;
+            }
+            .pepper
+            {
+                height: 300px;
+                width: 500px;
+                background-image: url(https://assets3.thrillist.com/v1/image/3107513/1200x630/flatten;crop_down;webp=auto;jpeg_quality=70);
+                background-size: cover;
+            }
+            .pepper:hover
+            {
+                background-image: url(https://s.hdnux.com/photos/01/06/30/27/18449879/4/1200x0.jpg);
+                background-size: cover;
+            }
+            .hawaiian
+            {
+                height: 300px;
+                width: 500px;
+                background-image: url(https://cookingformysoul.com/wp-content/uploads/2021/04/homemade-hawaiian-pizza-1200-min-500x500.jpg);
+                background-size: cover;
+            }
+            .hawaiian:hover
+            {
+                background-image: url(https://cupcakesandkalechips.com/wp-content/uploads/2021/04/Gluten-Free-Pineapple-Pizza-Recipe.jpg);
+                background-size: cover;
+            }
+            .taco
+            {
+                height: 300px;
+                width: 500px;
+                background-image: url(https://topsecretrecipes.com/images/product/dominos-chicken-taco-pizza-copycat-recipe.jpg);
+                background-size: cover;
+            }
+            .taco:hover
+            {
+                background-image: url(https://i.insider.com/5f4540e689aff80028ab7c76?width=1136&format=jpeg);
+                background-size: cover;
+            }
+            .letter:first-letter
+            {
+                color: blue;
+                font-size: 50px;
+                text-shadow: 5px 5px 2px black;
+            }
+            .dropdown-content
+            {
+                display: none;
+                position: absolute;
+                min-width: 100px;
+                background-color: lightgreen;
+                z-index: 1;
+            }
+            .dropdown
+            {
+                display: inline-block;
+            }
+            .dropdown:hover .dropdown-content
+            {
+                display: block;
+            }
+        </style>
+    </head>
+    <body onload="load()">
+        <header style="background-color: palegreen; height: 220px;">
+            <img src="oie_1001641NUHKrNRF.gif" style="height: 200px; width: 200px; float: left;">
+            <h1 style="text-align: center; padding-top: 75px;" class="letter">
+                    DELICOUS PIZZA
+            </h1>
+        </header>
+        <nav>
+            <ul>
+                <div class="dropdown">
+                    <li>Menu</li>
+                    <div class="dropdown-content">
+                        <a href="noodles.html"><p>Noodles</p></a>
+                        <a href="pizza_order.html"><p>Pizza</p></a>
+                        <a href="chiken-curry_order.html"><p>Chicken</p></a>
+                    </div>
+                    </div>
+    
+                    <div class="dropdown">
+                    <li>About</li>
+                    <div class="dropdown-content">
+                        <p>help</p>
+                        <p>service</p>
+                        <p>reviews</p>
+                    </div>  
+                    </div>
+    
+                    <div class="dropdown">
+                    <li>Contact</li>
+                    <div class="dropdown-content">
+                        <p>manager</p>
+                        <p>CEO</p>
+                        <p>founder</p>
+                        <p>staff and security</p> 
+                    </div> 
+                    </div>
+    
+                    <div class="dropdown">
+                    <li>Career</li>
+                    <div class="dropdown-content">
+                        <p>chef</p>
+                        <p>custodian</p>
+                        <p>cashier</p>
+                        <p>waiter</p>
+                    </div>
+                    </div>
+            </ul>
+        </nav>
+        <article class="ar">
+            <iframe width="400px" height="500px" src="https://www.youtube.com/embed/Fbrg90LGSs8?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div>
+                <img src="https://st4.depositphotos.com/1388860/28381/v/1600/depositphotos_283814744-stock-illustration-25-percent-off-neon-lettering.jpg" height="200px" width="100px">
+            </div>
+            <div>
+                <h1>
+                    ON ALL DRINKS!!!!
+                </h1>
+                <img src="https://www.shutterstock.com/image-photo/double-cool-ice-soft-drink-260nw-647315608.jpg">
+            </div>
+            <p id="yes" style="text-align: center;">
+                How would you rate your experiance?
+            </p>
+            <button type="button" onclick="ok()" id="right">Yes it was good</button>
+            <button type="button" onclick="no()" id="wrong">No it was not good</button>
+        </article>
+        <section class="sc">
+            <div style="height: 100px; width: 100%;">
+                <h3 style="text-align: center; padding: 30px;">
+                    ITEMS TO ORDER
+                </h3>
+            </div>
+            <div class="items">
+                <h1>
+                    CHEESE PIZZA
+                </h1>
+                <div class="cheese">
+                </div>
+                <p>
+                    The cheesiest homemade pizza with crunchy and soft crust, fresh tomato sauce, and fine cheese
+                    made of all purpose flour, active dry yeast, and fresh american cheese.
+                    to place order click below.
+                </p>
+                <a href="Favorite Food Form.html">
+                <center>   <button type="button">
+                        PLACE ORDER HERE
+                    </button></center> 
+                </a>
+            </div>
+            <div class="items">
+                <h1>
+                    CHICKEN PIZZA
+                </h1>
+                <div class="chicken" >
+                </div>
+                <p>
+                    The Chicken pizza is a delicous cheese pizza covered with freshly cooked chiken bites with
+                    Alfredo cheese and tasty buffalo sauce.
+                    Click below to place your order.
+                </p>
+                <a href="Favorite Food Form.html">
+                <center>    <button type="button">
+                        CLICK HERE TO PLACE YOUR ORDER
+                    </button></center> 
+                </a>
+            </div>
+            <div class="items">
+                <h1>
+                    VEG PIZZA
+                </h1>
+                <div class="veg">
+                </div>
+                <p>
+                    Veg Pizza is a delicous pizza covered with freshly made cheese plus veggies such as, olives, peppers, jalepenos, and any other topping you want on our list with an additional fee. 
+                    Click below to place your order.
+                </p>
+                <a href="Favorite Food Form.html">
+                    <center><button type="button">
+                        CLICK HERE TO PLACE YOUR ORDER
+                    </button></center> 
+                </a>
+            </div>
+            <div class="pizza">
+                <h1>
+                    PEPPERONI PIZZA
+                </h1>
+                <div class="pepper">
+                </div>
+                <p>
+                    Pepperoni Pizza is a delicous pizza covered with cheese and pepperoni with a lot of protein in it. 
+                    Click below to place your order.
+                </p>
+                <a href="Favorite Food Form.html">
+                    <center> <button type="button">
+                        PLACE YOUR ORDER HERE
+                    </button></center> 
+                </a>
+            </div>
+            <div class="pizza">
+                <h1>
+                    HAWAIIAN PIZZA
+                </h1>
+                <div class="hawaiian">
+                </div>
+                <p>
+                    Hawaiian  Pizza is a delicous tropical pizza covered in freshly grown pineapple, turkey, sliced onions, and nice mozzerela or alfredo sauce. 
+                    place order below.
+                </p>
+                <a href="Favorite Food Form.html">
+                    <center>  <button type="button">
+                        PLACE ORDER HERE
+                    </button></center> 
+                </a>
+            </div>
+            <div class="pizza">
+                <h1>
+                    TACO PIZZA
+                </h1>
+                <div class="taco">
+                </div>
+                <p>
+                   Taco Pizza is tomato, olives, grilled chicken, green pepper, onion, alfredo sauce, and buffalo sauce drizzled nicely on top of it, blended together to create on of the most tasty pizzas you will ever eat. 
+                   Click button below to place your order.
+                </p>
+                <a href="Favorite Food Form.html">
+                    <center>
+                    <button type="button">
+                        Click button, and place order.
+                    </button>
+                </center>
+                </a>
+            </div>
+        </section>
+    </body>
+</html>
